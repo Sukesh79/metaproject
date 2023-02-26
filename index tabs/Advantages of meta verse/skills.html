@@ -1,0 +1,91 @@
+<html>
+<head>
+	<title>Skills</title>
+	<style>
+		#skills1,#skills2,#skills3,#skills4,#skills5,#skills6
+		{
+			position: absolute;
+			border-style:solid;
+			border-width:5;
+			border-radius:50%;
+			animation:border1 2s linear;
+			animation-fill-mode:forwards;
+			animation-delay: 3.5s;
+			border-color: #444444;
+		}
+		@keyframes border1
+		{
+			0%
+			{
+				border-radius: 50%;
+			}
+			100%
+			{
+				border-radius: 10%;
+			}
+		}
+	</style>
+	<script src="D:\metaproject\jq.js"></script>
+	<script language="javascript">
+		function skillsanim1()
+		{
+		const mytimeout=setTimeout(skillsanim,500);
+		function skillsanim(){
+		$('#skills1').animate({
+			left:'100px',
+			top:'40px',
+		},3000);
+		$('#skills2').animate({
+			left:'100px',
+			top:'320px',
+		},3000);
+		$('#skills3').animate({
+			left:'100px',
+			top:'600px',
+		},3000);
+		$('#skills4').animate({
+			left:'1100px',
+			top:'40px',
+		},3000);
+		$('#skills5').animate({
+			left:'1100px',
+			top:'320px',
+		},3000);
+		$('#skills6').animate({
+			left:'1100px',
+			top:'600px',
+		},3000);
+	}
+}
+	</script>
+</head>
+<body style="background: linear-gradient(135deg,royalblue,deeppink);" onload="skillsanim1();">
+	<img style="z-index:8;top:320;left:625;position: absolute;border-style:solid;	border-width:5;	border-radius:50%;" 
+		 src="D:\metaproject\images\skills.jpg" width="300" height="200">
+
+	<a href="D:\metaproject\anil\c&d in meta.html"><img style="z-index:7;top:320;left:625;" 
+		id="skills1" src="D:\metaproject\images\drawing.jpg" alt="" width="300" height="200"></a>
+
+	<a href="D:\metaproject\anil\drive and dance practice.html"><img style="z-index:6;top:320;left:625; " id="skills2" 
+		 src="D:\metaproject\images\dancing.jpg"  width="300" height="200"></a>
+
+	<a href="D:\metaproject\anil\exersice.html"><img style="z-index:5;top:320;left:625; " id="skills3" 
+		src="D:\metaproject\images\exercise.jpg"  width="300" height="200"></a>
+
+	<a href="D:\metaproject\anil\soft & lang.html"><img style="z-index:4;top:320;left:625;" id="skills4" 
+		 src="D:\metaproject\images\softwares&languages.jpg"  width="300" height="200"></a>
+
+	<a href="D:\metaproject\aravind\3d design.html"><img style="z-index:3;top:320;left:625;" id="skills5" 
+	src="D:\metaproject\images\3ddesigning.jpg"  width="300" height="200"></a>
+
+	<a href="D:\metaproject\anil\MY GAMING.html"><img style="z-index:2;top:320;left:625; " id="skills6" 
+		 src="D:\metaproject\images\games.jpg"  width="300" height="200"></a>
+
+	<a href="D:\metaproject\index tabs\Advantages of meta verse\education.html"><div style="position:fixed;z-index:6;bottom:0;left:0;width:200;height:100;"></div></a>
+	<a href="D:\metaproject\index tabs\Advantages of meta verse\Advantages.html"><div style="position:fixed;z-index:6;bottom:0;left:650;width:200;height:100;"></div></a> 
+		<a href="D:\metaproject\index tabs\Advantages of meta verse\learning2.html">
+   <div style="position: absolute;z-index:10;right: 0;bottom: 0;height:100;width:200;">
+    </div></a>
+
+</body>
+</html>

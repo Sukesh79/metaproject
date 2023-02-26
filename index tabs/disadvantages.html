@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Hexagon Card Hover Effect</title>
+    <style type="text/css">
+        *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 100vh;
+}
+
+.container{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.container .hexagon::before{
+    content: '';
+    position: absolute;
+    bottom: -70px;
+    width: 100%;
+    height: 60px;
+    background: radial-gradient(rgba(0,0,0,0.16), transparent, transparent);
+    border-radius: 50%;
+    transition: 0.5s;
+}
+
+.container .hexagon:hover::before{
+    opacity: 0.8;
+    transform: scale(0.8);
+}
+
+.container .hexagon{
+    position: relative;
+    width: 300px;
+    height: 350px;
+    margin: 50px 20px 70px;
+}
+
+.container .hexagon .hexagon-shape{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 90%;
+    height: 90%;
+    background: #ccc;
+    clip-path: polygon(0 25%, 50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%);
+    transition: 0.5s;
+}
+
+.container .hexagon:hover .hexagon-shape{
+    transform: translateY(-30px);
+}
+
+.container .hexagon .hexagon-shape img{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.container .hexagon .hexagon-shape .content{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    text-align: center;
+    color: #oooooo;
+    background: linear-gradient(45deg, #ccc, rgba(3,255,244,0.5));
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.container .hexagon:hover .hexagon-shape .content{
+    opacity: 1;
+}
+
+    </style>
+<body style="overflow:hidden;">
+  <font color="black">
+    <div style="position: absolute;left: -10;top: 90;">
+            <img src="D:\metaproject\images\3D hologram3.jpg" width="1537" height="870"></div>
+    <div class="container">
+        <div class="hexagon">
+            <div class="hexagon-shape">
+                
+                <img src="D:\metaproject\images\social impact.jfif" alt="">
+                <div class="content">
+                    <div>
+                        <h2>Social Impact</h2>
+                        <p>While metaverse could make you experience any environment, the disconnect from the real world could seriously impact our mental health.  The same could be seen in a more aggressive form with a whole virtual world.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hexagon">
+            <div class="hexagon-shape">
+                <img src="D:\metaproject\images\privacy issues.jpg" >
+                <div class="content">
+                    <div>
+                        <h2>Privacy</h2>
+                        <p>As most of our personal and professional lives are spent online, our data has gradually become a commodity for many marketing companies. The advent of intrusive technologies has already raised our privacy concerns. Now the larger question is: how will metaverse control someone’s privacy.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hexagon">
+            <div class="hexagon-shape">
+                <img src="D:\metaproject\images\internetconnection.jpg" >
+                <div class="content">
+                    <div>
+                        <h2>Internet</h2>
+                        <p>For the Metaverse, we recommend a minimum of 1 Gbps (1000 Mbps) for both upstream and downstream traffic. If you are only using the Metaverse to view content, you may be able to get away with less bandwidth.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hexagon">
+            <div class="hexagon-shape">
+                <img src="D:\metaproject\images\equipmentovr.jpg" >
+                <div class="content">
+                    <div>
+                        <h2>Requires technology</h2>
+                        <p>Not everyone may be able to afford the tech to experience metaverse since it does use pretty high-level equipment for an ultimate VR experience. The metaverse may directly impact and increase the socio-economic disparity. </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a href="D:\metaproject\index tabs\Advantages of meta verse\Advantages.html">
+            <div class="hexagon">
+            <div class="hexagon-shape">
+                <img src="D:\metaproject\images\mental issues.webp">
+                <div class="content">
+                    <div>
+                        <h2>psychological issues</h2>
+                        <p> 1.Attention deficit hyperactivity disorder
+                            2.Eating disorders
+                            3.Anxiety, phobias and post-traumatic stress disorder
+                            4.Autism
+                            5.Alzheimer's disease
+                            6.Stress and pain management</p>
+                    </div>
+                </div>
+            </div>
+        </div></a>
+        <div class="hexagon">
+            <div class="hexagon-shape">
+                <img src="D:\metaproject\images\eye disablity.webp">
+                <div class="content">
+                    <div>
+                        <h2>Eye Disability</h2>
+                        <p>Blind and visually impaired users will need screen reading capabilities along with seamless audio description. One challenge will be that the metaverse, by its very nature, is intended to be a visually richer world than what we have today. This will pose further complexities for blind and low vision users.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hexagon">
+            <div class="hexagon-shape">
+                <img src="D:\metaproject\images\virualcrime.jpg">
+                <div class="content">
+                    <div>
+                        <h2>Virtual Crime</h2>
+                        <p> Most recently, the virtual worlds were in the news when a group of male virtual avatars molested a woman’s virtual avatar. This falls in a very grey area with the current criminal regulations. People often use social media to create fake identities as well. Even in the metaverse, this problem is bound to prevail.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+         <a href="D:\metaproject\Naveen\aligation and critcs.html"><div class="hexagon">
+            <div class="hexagon-shape">
+                <img src="D:\metaproject\images\minors.jfif">
+                <div class="content">
+                    <div>
+                        <h2>Adverse impact on minors</h2>
+                        <p> It may be extremely difficult to keep children away from this futuristic tech. Therefore, it becomes imperative to protect the children from the harmful impact of the metaverse.</p>
+                    </div>
+                </div>
+            </div>
+        </div></a>
+    </div>   
+</body>
+</font>
+</html>

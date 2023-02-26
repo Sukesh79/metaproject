@@ -1,0 +1,111 @@
+<html>
+ <head>
+ 	<title> index </title>
+    <script src="D:\metaproject\jq.js"></script>
+    <script>
+       
+            function indexanimate()
+            {
+
+                $("#indexanimate").animate(
+                    {
+                    top:'50px',
+                    left:'100px',
+                    height:'700px',
+                    width: '1240px'
+                },2000);
+            }
+            
+        function ifadeinn()
+          {
+            $("#infoanim").animate({
+                top:'90px',
+                height:'700px',
+                width:'1120px'
+            },2000);
+            
+          }
+          function ifadeinn2()
+          {
+          const myTimeOut2=setTimeout(myfade2,1800);
+            function myfade2()
+            {
+                $("#infofade2").fadeIn();
+            }
+        }
+        function myfadeout()
+        {
+            $("#infofade2").fadeOut();
+        }
+        function myfadeout2()
+        {
+            $("#infoanim").fadeOut();
+        }
+        function myfadeOuts()
+        {
+            myfadeout();
+            myfadeout2();
+            indexanimate();
+            fadeInn();
+        }
+        function ifadeinn3()
+        {
+            ifadeinn();
+            ifadeinn2();
+        }
+        function fadeInn()
+        {
+         const myTimeOut=setTimeout(myfade,1800);
+         function myfade()
+           {
+             $("#fadein").fadeIn();
+           }
+         }   
+    </script>
+    <style>
+        a
+        {
+            color: white;
+            font-size: 40;
+        }
+    </style>
+ </head>
+ <body onload="ifadeinn3();">
+ 	<div style="z-index:0;position: absolute; height: 874;width:1546 ;top:-10; left: -10;">
+ 		<img src="D:\metaproject\images\Index2.jpg.jpg" height="874" width="1546">
+ 	</div>
+ <div id="index"  style="z-index: 3;position: absolute;top:700;left: 1250;height: 100;width:200;">
+ 		<img id="index" src="D:\metaproject\images\indexlogo.png" height="100" width="200" onclick="myfadeOuts();">
+ 	</div>
+ 	<div  id="indexanimate" style="z-index:2; position:absolute;
+                    top:600;left:1250;height: 0;width:0;
+                background-image:url(D:/metaproject/indexbg2.png);">
+     </div>
+     <div id="fadein" style="display: none;z-index:4;position:absolute;top:150;left:130;height:550;width:1200;"><br>
+        <center><a href="D:\metaproject\index tabs\introduction tab\introduction.html">Introduction</a><br>
+        <a href="D:\metaproject\index tabs\history tab\history.html">History</a><br>
+        <a href="D:\metaproject\index tabs\companies.html">Companies</a><br>
+        <a href="D:\metaproject\index tabs\access\access.html">How to Access</a><br>
+        <a href="D:\metaproject\index tabs\Advantages of meta verse\Advantages.html">Advantages</a><br>
+        <a href="D:\metaproject\index tabs\disadvantages.html">Disadvantages</a><br>
+        <a href="D:\metaproject\Naveen\aligation and critcs.html">Supporters and Critics</a><br>
+        <a href="D:\metaproject\index tabs\overview.html">Overview</a><br>
+        <a href="D:\metaproject\index tabs\conclusion.html">Conclusion</a><br></center>
+    </div>
+    <div style="z-index:2;position:absolute;top:760;left:50;width:50;height:50;">
+        <img src="D:\metaproject\info symbol.png" width="50" height="50">
+    </div>
+    <div id="infoanim" style="z-index:1;position:absolute;top:760;left:80;width:0;height:0;
+                     background-image: url(D:/metaproject/infobg.png);border-style:solid;border-color:#cccccc">
+    </div>
+    <div id="infofade2" style="z-index:5;position:absolute;top:150;left:100;width:1070;height:570;display: none;
+                color: white;font-size:30;text-align: justify;">
+        <P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Metaverse is a network of 3D virtual worlds focused on social connection.
+            The metaverse is a hypothetical iteration of the Internet as a single, universal and immersive virtual world that is facilitated by the use of virtual reality (VR) and augmented reality (AR) headsets.          
+        </P>
+    <center><img src="D:\metaproject\metaverse-virtual-world-1.jpg" width="400" height="300"></center><br>
+      <p align="right"> For more information Click Index.</p>
+    </div>
+
+ </body>
+ </html>

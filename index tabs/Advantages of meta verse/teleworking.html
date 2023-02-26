@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+	<meta charset="utf-8">
+	<title>learning</title>
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+		}
+		html,body{
+			display: grid;
+			height: 100%;
+			place-items: center;
+			background: #000;
+		}
+		.center{
+			display: flex;
+			text-align: center;
+			align-items: center;
+			justify-content: center;
+		}
+		.outer{
+			position: relative;
+			margin:0 50px;
+			background: #111;
+		}
+		.button{
+			height:110px;
+			width: 280px;
+			border-radius: 50px;
+		}
+		.outer button, .outer span{
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+		}
+		.outer button{
+			background: #111;
+			color: #f2f2f2;
+			outline: none;
+			border: none;
+			font-size: 23px;
+			letter-spacing: 1px;
+			text-transform: uppercase;
+			z-index: 9;
+			cursor: pointer;
+		}
+		.button button{
+			height: 100px;
+			width: 270px;
+			border-radius: 50px;
+		}
+		.outer span{
+			height: 100%;
+			width: 100%;
+			background: inherit;
+		}
+		.button span{
+			border-radius: 50px;
+		}
+		.outer:hover span:nth-child(1){
+			filter: blur(7px);
+		}
+		.outer:hover span:nth-child(2){
+			filter: blur(14px);
+		} 
+		.outer:hover {
+			background: linear-gradient(#14ffe9,#ffeb3b,#ff00e0);
+			animation: rotate 1.5s linear infinite;
+		}
+		@keyframes rotate{
+			0%{
+				filter: hue-rotate(0deg);
+			}
+			100%{
+				filter: hue-rotate(360deg);
+			}
+		}
+		@media (max-width: 640px){
+			.center{
+				flex-wrap: wrap;
+				flex-direction: column;
+			}
+			.outer{
+				margin: 50px 0px;
+			}
+		}
+
+	</style>
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+</head>
+<body>
+	<img style="z-index:0;min-height: 100%;min-width: 100%;right: 0;bottom: 0;position: fixed;" src="D:\metaproject\images\learning3.jpg">
+	<div class="center">
+	<a href="D:\metaproject\index tabs\Advantages of meta verse\exploration3.html"><div style="opacity:0;" class="outer button">
+	 	<button>dfasd</button>
+	 	<span></span>
+	 	<span></span>
+	 </div></a>
+		<a href="D:\metaproject\index tabs\Advantages of meta verse\Teleconference.html"><div class="outer button">
+			<button>Teleconference</button>
+			<span></span>
+			<span></span>
+		</div></a>
+		<a href="D:\metaproject\index tabs\Advantages of meta verse\workplace.html"><div class="outer button">
+			<button>Workplace</button>
+			<span></span>
+			<span></span>
+		</div></a>
+	<a href="D:\metaproject\index tabs\Advantages of meta verse\games.html"><div style="opacity:0;" class="outer button">
+	 	<button>dfasd</button>
+	 	<span></span>
+	 	<span></span>
+	 </div></a>
+	</div>
+</body>
+</html>
